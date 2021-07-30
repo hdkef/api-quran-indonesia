@@ -1,6 +1,6 @@
 # API QURAN INDONESIA
 
-Api Quran Bahasa Indonesia adalah API untuk mendapatkan data-data Al-Quran dalam terjemahan bahasa Indonesia yang ditulis dalam bahasa pemrogramman Golang
+Api Quran Bahasa Indonesia adalah API untuk mendapatkan data-data Al-Quran dalam terjemahan bahasa Indonesia yang ditulis dalam bahasa pemrograman Golang
 
 ## Cara Install
 
@@ -13,13 +13,17 @@ clone repo ini menggunakan perintah
 
     git clone github.com/hdkef/api-quran-indonesia
 
-compile ke binary dengan menggunakan perintah
+compile ke binary dengan menggunakan perintah (pastikan present working directory pada folder target)
 
     go build server.go
 
 jalankan file binary
 
     ./server
+
+PERHATIAN!
+
+aplikasi akan berjalan secara default pada PORT 8080 kecuali PORT pada .env telah diubah
 
 ### Menggunakan Docker
 
