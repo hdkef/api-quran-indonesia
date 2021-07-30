@@ -1,0 +1,115 @@
+id,alter,indonesia,arabic
+1, Al Fatihah ,Pembuka,ٱلْفَاتِحَة
+2, Al Baqarah ,Sapi Betina,ٱلْبَقَرَة
+3, Ali Imran ,Keluarga Imran,آلِ عِمْرَان
+4, An Nisa ,Wanita, ٱلنِّسَاء
+5, Al Ma'idah ,Jamuan,ٱلْمَائِدَة
+6, Al An'am ,Hewan Ternak,ٱلْأَنْعَام
+7, Al-A'raf ,Tempat yang Tertinggi,ٱلْأَعْرَاف
+8, Al-Anfal ,Harta Rampasan Perang,ٱلْأَنْفَال
+9, At-Taubah,Pengampunan,ٱلتَّوْبَة
+10, Yunus ,Nabi Yunus,يُونُس
+11, Hud ,Nabi Hud,هُود
+12, Yusuf ,Nabi Yusuf,يُوسُف
+13, Ar-Ra'd ,Guruh,ٱلرَّعْد
+14, Ibrahim ,Nabi Ibrahim,إِبْرَاهِيم
+15, Al-Hijr ,Gunung Al Hijr,ٱلْحِجْر
+16, An-Nahl ,Lebah,ٱلنَّحْل
+17, Al-Isra' ,Perjalanan Malam,ٱلْإِسْرَاء
+18, Al-Kahf ,Penghuni-penghuni Gua,ٱلْكَهْف
+19, Maryam ,Maryam,مَرْيَم
+20, Ta Ha ,Ta Ha,طه
+21, Al-Anbiya ,Nabi-Nabi,ٱلْأَنْبِيَاء
+22, Al-Hajj ,Haji,ٱلْحَجّ
+23, Al-Mu'minun ,Orang-orang mukmin,ٱلْمُؤْمِنُون
+24, An-Nur ,Cahaya,ٱلنُّور
+25, Al-Furqan ,Pembeda,ٱلْفُرْقَان
+26, Asy-Syu'ara' ,Penyair,ٱلشُّعَرَاء
+27, An-Naml ,Semut,ٱلنَّمْل
+28, Al-Qasas ,Kisah-kisah,ٱلْقَصَص
+29, Al-'Ankabut ,Laba-laba,ٱلْعَنْكَبُوت
+30, Ar-Rum ,Bangsa Romawi,ٱلرُّوم
+31, Luqman ,Keluarga Luqman,لُقْمَان
+32, As-Sajdah ,Sajdah,ٱلسَّجْدَة
+33, Al-Ahzab ,Golongan-golongan yang Bersekutu,ٱلْأَحْزَاب
+34, Saba' ,Kaum Saba',سَبَأ
+35, Fatir ,Pencipta,فَاطِر
+36, Ya Sin ,Yaasiin,يس
+37, As-Saffat ,Barisan-barisan,ٱلصَّافَّات
+38, Sad ,Shaad,ص
+39, Az-Zumar ,Rombongan-rombongan,ٱلزُّمَر
+40, Ghafir ,Yang Mengampuni,غَافِر
+41, Fussilat ,Yang Dijelaskan,فُصِّلَت
+42, Asy-Syura ,Musyawarah,ٱلشُّورىٰ
+43, Az-Zukhruf ,Perhiasan,ٱلْزُّخْرُف
+44, Ad-Dukhan ,Kabut,ٱلدُّخَان
+45, Al-Jasiyah ,Yang Bertekuk Lutut,ٱلْجَاثِيَة
+46, Al-Ahqaf ,Bukit-bukit Pasir,ٱلْأَحْقَاف
+47, Muhammad ,Nabi Muhammad,مُحَمَّد
+48, Al-Fath ,Kemenangan,ٱلْفَتْح
+49, Al-Hujurat ,Kamar-kamar,ٱلْحُجُرَات
+50, Qaf ,Qaaf,ق
+51, Az-Zariyat ,Angin yang Menerbangkan,ٱلذَّارِيَات
+52, At-Tur ,Bukit,ٱلطُّور
+53, An-Najm ,Bintang,ٱلنَّجْم
+54, Al-Qamar ,Bulan,ٱلْقَمَر
+55, Ar-Rahman ,Yang Maha Pemurah,ٱلرَّحْمَٰن
+56, Al-Waqi'ah ,Hari Kiamat,ٱلْوَاقِعَة
+57, Al-Hadid ,Besi,ٱلْحَدِيد
+58, Al-Mujadilah ,Wanita yang Mengajukan Gugatan,ٱلْمُجَادِلَة
+59, Al-Hasyr ,Pengusiran,ٱلْحَشْر
+60, Al-Mumtahanah ,Wanita yang Diuji,ٱلْمُمْتَحَنَة
+61, As-Saff ,Satu Barisan,ٱلصَّفّ
+62, Al-Jumu'ah ,Hari Jum'at,ٱلْجُمُعَة
+63, Al-Munafiqun ,Orang-orang yang Munafik,ٱلْمُنَافِقُون
+64, At-Tagabun ,Hari Dinampakkan Kesalahan-kesalahan,ٱلتَّغَابُن
+65, At-Talaq ,Talak,ٱلطَّلَاق
+66, At-Tahrim,Mengharamkan,ٱلتَّحْرِيم 
+67, Al-Mulk ,Kerajaan,ٱلْمُلْك
+68, Al-Qalam ,Pena,ٱلْقَلَم
+69, Al-Haqqah ,Hari Kiamat,ٱلْحَاقَّة
+70, Al-Ma'arij ,Tempat Naik,ٱلْمَعَارِج
+71, Nuh ,Nabi Nuh,نُوح
+72, Al-Jinn ,Jin,ٱلْجِنّ
+73, Al-Muzzammil ,Orang yang Berselimut,ٱلْمُزَّمِّل
+74, Al-Muddassir ,Orang yang Berkemul,ٱلْمُدَّثِّر
+75, Al-Qiyamah ,Kiamat,ٱلْقِيَامَة
+76, Al-Insan ,Manusia,ٱلْإِنْسَان
+77, Al-Mursalat ,Malaikat-Malaikat Yang Diutus,ٱلْمُرْسَلَات
+78, An-Naba' ,Berita Besar,ٱلنَّبَأ
+79, An-Nazi'at ,Malaikat-Malaikat Yang Mencabut,ٱلنَّازِعَات
+80, 'Abasa ,Ia Bermuka Masam,عَبَسَ
+81, At-Takwir ,Menggulung,ٱلتَّكْوِير
+82,Al-Infitar ,Terbelah,ٱلْإِنْفِطَار
+83, Al-Tatfif ,Orang-orang yang Curang,ٱلْمُطَفِّفِين
+84, Al-Insyiqaq ,Terbelah,ٱلْإِنْشِقَاق
+85, Al-Buruj ,Gugusan Bintang,ٱلْبُرُوج
+86, At-Tariq ,Yang Datang di Malam Hari,ٱلطَّارِق
+87, Al-A'la ,Yang Paling Tinggi,ٱلْأَعْلَىٰ
+88, Al-Gasyiyah ,Hari Pembalasan,ٱلْغَاشِيَة
+89, Al-Fajr ,Fajar,ٱلْفَجْر
+90, Al-Balad ,Negeri,ٱلْبَلَد
+91, Asy-Syams ,Matahari,ٱلشَّمْس
+92, Al-Lail ,Malam,ٱللَّيْل
+93, Ad-Duha ,Waktu Dhuha,ٱلضُّحَىٰ
+94, Al-Insyirah ,Melapangkan,ٱلشَّرْح
+95, At-Tin ,Buah Tin,ٱلتِّين
+96, Al-'Alaq ,Segumpal Darah,ٱلْعَلَق
+97, Al-Qadr ,Kemuliaan,ٱلْقَدْر
+98, Al-Bayyinah ,Pembuktian,ٱلْبَيِّنَة
+99, Az-Zalzalah ,Kegoncangan,ٱلزَّلْزَلَة
+100, Al-'Adiyat ,Berlari Kencang,ٱلْعَادِيَات
+101, Al-Qari'ah ,Hari Kiamat,ٱلْقَارِعَة
+102, At-Takasur ,Bermegah-megahan,ٱلتَّكَاثُر
+103, Al-'Asr ,Masa,ٱلْعَصْر
+104, Al-Humazah ,Pengumpat,ٱلْهُمَزَة
+105, Al-Fil ,Gajah,ٱلْفِيل
+106, Quraisy ,Suku Quraisy,قُرَيْش
+107, Al-Ma'un ,Barang-barang yang Berguna,ٱلْمَاعُون
+108, Al-Kausar ,Nikmat yang Berlimpah,ٱلْكَوْثَر
+109, Al-Kafirun ,Orang-orang Kafir,ٱلْكَافِرُون
+110, An-Nasr ,Pertolongan,ٱلنَّصْر
+111, Al-Lahab ,Gejolak Api,ٱلْمَسَد
+112, Al-Ikhlas ,Ikhlas,ٱلْإِخْلَاص
+113, Al-Falaq ,Waktu Subuh,ٱلْفَلَق
+114, An-Nas ,Umat Manusia,ٱلنَّاس

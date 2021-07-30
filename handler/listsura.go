@@ -1,7 +1,19 @@
 package handler
 
-import "github.com/gin-gonic/gin"
+import (
+	"quran-indonesia/data"
+	"quran-indonesia/models"
+	"quran-indonesia/utils"
+
+	"github.com/gin-gonic/gin"
+)
+
+var LISTSURAH []models.List
+
+func init() {
+	LISTSURAH = data.UnmarshallListCSV()
+}
 
 func HandleListSura(ginctx *gin.Context) {
-	ginctx.Writer.Write([]byte("HandleListSura"))
+	utils.ResJSON(ginctx, LISTSURAH)
 }

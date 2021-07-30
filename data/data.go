@@ -5,9 +5,9 @@ import (
 	"encoding/csv"
 	"errors"
 	"fmt"
-	"io"
 	"os"
 	"path/filepath"
+	"quran-indonesia/konstanta"
 	"quran-indonesia/models"
 
 	"github.com/jszwec/csvutil"
@@ -18,6 +18,7 @@ func csvFilepath(name string) string {
 }
 
 var QURAN = csvFilepath("quran.csv")
+var LIST = csvFilepath("list.csv")
 
 func openFile(filepath string) *os.File {
 	file, err := os.Open(filepath)
@@ -27,7 +28,7 @@ func openFile(filepath string) *os.File {
 	return file
 }
 
-func unmarshall(fname string, filter func(models.Quran) (models.Quran, bool, bool)) (interface{}, error) {
+func unmarshall(unittype string, fname string, filter func(interface{}) (interface{}, bool, bool)) (interface{}, error) {
 
 	file := openFile(fname)
 
@@ -40,7 +41,7 @@ func unmarshall(fname string, filter func(models.Quran) (models.Quran, bool, boo
 		return nil, err
 	}
 
-	result, err := doLoopingWithFilter(dec, filter)
+	result, err := doLoopingWithFilter(unittype, dec, filter)
 	if err != nil {
 		return nil, err
 	}
@@ -48,41 +49,32 @@ func unmarshall(fname string, filter func(models.Quran) (models.Quran, bool, boo
 	return result, nil
 }
 
-//loop the csv with filter parameter
-func doLoopingWithFilter(dec *csvutil.Decoder, filter func(models.Quran) (models.Quran, bool, bool)) ([]models.Quran, error) {
-	slices := []models.Quran{}
-
-	for {
-		var unit models.Quran
-
-		err := dec.Decode(&unit)
-		if err == io.EOF {
-			break
-		} else if err != nil {
-			panic(err.Error())
-		}
-
-		item, valid, isItFinish := filter(unit)
-
-		if valid {
-			slices = append(slices, item)
-		}
-		if isItFinish {
-			break
-		}
+//loop the csv with filter parameter according to type
+func doLoopingWithFilter(unittype string, dec *csvutil.Decoder, filter func(interface{}) (interface{}, bool, bool)) (interface{}, error) {
+	switch unittype {
+	case konstanta.AYA:
+		return handleQuran(dec, filter)
+	case konstanta.SURA:
+		return handleList(dec, filter)
+	default:
+		return nil, errors.New("NO match type")
 	}
-
-	if len(slices) == 0 {
-		return nil, errors.New("NO DATA")
-	}
-
-	return slices, nil
 }
 
-func UnmarshallQuranCSV(filter func(models.Quran) (models.Quran, bool, bool)) ([]models.Quran, error) {
-	result, err := unmarshall(QURAN, filter)
+func UnmarshallQuranCSV(filter func(interface{}) (interface{}, bool, bool)) ([]models.Quran, error) {
+	result, err := unmarshall(konstanta.AYA, QURAN, filter)
 	if err != nil {
 		return nil, err
 	}
 	return result.([]models.Quran), nil
+}
+
+func UnmarshallListCSV() []models.List {
+	result, err := unmarshall(konstanta.SURA, LIST, func(q interface{}) (interface{}, bool, bool) {
+		return q, true, false
+	})
+	if err != nil {
+		panic(err)
+	}
+	return result.([]models.List)
 }
