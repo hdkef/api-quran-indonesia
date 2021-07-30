@@ -1,6 +1,7 @@
 package data
 
 import (
+	_ "embed"
 	"encoding/csv"
 	"errors"
 	"fmt"
@@ -18,12 +19,6 @@ func csvFilepath(name string) string {
 
 var QURAN = csvFilepath("quran.csv")
 
-var QURANFILE *os.File
-
-func init() {
-	QURANFILE = openFile(QURAN)
-}
-
 func openFile(filepath string) *os.File {
 	file, err := os.Open(filepath)
 	if err != nil {
@@ -32,7 +27,9 @@ func openFile(filepath string) *os.File {
 	return file
 }
 
-func unmarshall(file *os.File, filter func(models.Quran) (models.Quran, bool, bool)) (interface{}, error) {
+func unmarshall(fname string, filter func(models.Quran) (models.Quran, bool, bool)) (interface{}, error) {
+
+	file := openFile(fname)
 
 	csvReader := csv.NewReader(file)
 	csvReader.Comma = ','
@@ -83,7 +80,7 @@ func doLoopingWithFilter(dec *csvutil.Decoder, filter func(models.Quran) (models
 }
 
 func UnmarshallQuranCSV(filter func(models.Quran) (models.Quran, bool, bool)) ([]models.Quran, error) {
-	result, err := unmarshall(QURANFILE, filter)
+	result, err := unmarshall(QURAN, filter)
 	if err != nil {
 		return nil, err
 	}

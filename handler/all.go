@@ -23,12 +23,12 @@ func HandleAll(ginctx *gin.Context) {
 
 	result, err := data.UnmarshallQuranCSV(func(q models.Quran) (models.Quran, bool, bool) {
 
-		v, _ := strconv.Atoi(q.Sura)
+		sura, _ := strconv.Atoi(q.Sura)
 
-		if v == suraInt {
+		if sura == suraInt {
 			return q, true, false
 		}
-		if v > suraInt {
+		if sura > suraInt {
 			return models.Quran{}, false, true
 		}
 		return models.Quran{}, false, false
