@@ -27,7 +27,11 @@ aplikasi akan berjalan secara default pada PORT 8080 kecuali PORT pada .env tela
 
 ### Menggunakan Docker
 
-soon
+jalankan perintah berikut di terminal
+
+    docker run -d -p 1010:8080 --name quran-indonesia 081218068401/quran-indonesia
+
+aplikasi akan berjalan pada localhost:1010 dengan nama container api-lokasi-indonesia
 
 ## Cara Menggunakan
 

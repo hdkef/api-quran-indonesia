@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+    quran-indonesia:
+        build: .
+        container_name: quran-indonesia
+        environment:
+            - PORT=8080
+            - GIN_MODE=release
+        ports:
+            - 8080:8080
