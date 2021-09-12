@@ -2,6 +2,9 @@
 
 Api Quran Bahasa Indonesia adalah API untuk mendapatkan data-data Al-Quran dalam terjemahan bahasa Indonesia yang ditulis dalam bahasa pemrograman Golang
 
+## Untuk Dilakukan
+Merombak resource naming menjadi berpedoman kepada  truly REST API.
+
 ## Cara Install
 
 ## Mengubah .env
